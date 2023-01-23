@@ -1,8 +1,12 @@
+import Bedroom from "./Bedroom"
+
 const FloorPlan = () => {
   return (
-    <div>
-      <h1>Placeholder</h1>
-    </div>
+    <>
+      <Bedroom bedNum="1"/>
+      <Bedroom bedNum="2"/>
+      <Bedroom bedNum="3"/>
+    </>
   )
 }
 
