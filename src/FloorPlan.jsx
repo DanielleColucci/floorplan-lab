@@ -8,8 +8,8 @@ const FloorPlan = () => {
     <>
       <Bedroom bedNum="1"/>
       <Kitchen />
-      <Bedroom bedNum="2"/>
       <Bath size="Full"/>
+      <Bedroom bedNum="2"/>
       <LivingRoom />
       <Bath size="Full"/>
       <Bedroom bedNum="3"/>
