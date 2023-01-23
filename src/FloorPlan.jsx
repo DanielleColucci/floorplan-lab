@@ -1,5 +1,6 @@
 import Bedroom from "./Bedroom"
 import Kitchen from "./Kitchen"
+import LivingRoom from "./LivingRoom"
 
 const FloorPlan = () => {
   return (
@@ -8,6 +9,7 @@ const FloorPlan = () => {
       <Bedroom bedNum="2"/>
       <Bedroom bedNum="3"/>
       <Kitchen />
+      <LivingRoom />
     </>
   )
 }
