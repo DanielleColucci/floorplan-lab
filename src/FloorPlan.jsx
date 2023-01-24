@@ -4,15 +4,35 @@ import LivingRoom from "./LivingRoom"
 import Bath from "./Bath"
 
 const FloorPlan = () => {
+  const bedrooms = [
+    {
+      id: 0, 
+      bedNum: '1'}, 
+    {
+      id: 1, 
+      bedNum: '2'},
+    {
+      id: 2, 
+      bedNum: '3'}
+  ]
+
+  const baths = [
+    {
+      id: 0, 
+      size: 'Half'
+    },
+    {
+      id: 1,
+      size: 'Full'
+    }
+  ]
+
   return (
     <>
-      <Bedroom bedNum="1"/>
+      {bedrooms.map(bedroom => <Bedroom key={bedroom.id} bedNum={bedroom.bedNum}/>)}
+      {baths.map(bath => <Bath key={bath.id} size={bath.size}/>)}
       <Kitchen />
-      <Bath size="Full"/>
-      <Bedroom bedNum="2"/>
       <LivingRoom />
-      <Bath size="Half"/>
-      <Bedroom bedNum="3"/>
     </>
   )
 }
